@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Vincent Quilay - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+            font-size: 20px;
+        }
+        .upper-part {
+            background-color: #000; /* Black background */
+            color: #00f; /* Blue text color */
+            padding: 100px 20px 60px; /* Padding for the upper part */
+            text-align: left; /* Align text to the left */
+        }
+        .profile-image {
+            border: 8px solid #333; /* Border for the image */
+            border-radius: 50%;
+            max-width: 100%; /* Make sure the image doesn't exceed its container */
+            height: auto; /* Ensure aspect ratio is maintained */
+            margin-top: 20px; /* Margin for the image */
+        }
+        .social-icon {
+            font-size: 36px; /* Size of social icons */
+            margin-right: 20px; /* Spacing between social icons */
+        }
+        .btn {
+            font-size: 18px; /* Size of buttons */
+            padding: 15px 30px; /* Padding for buttons */
+        }
+        .card {
+            margin-bottom: 40px; /* Spacing between cards */
+        }
+        h2 {
+            margin-top: 0; /* Remove default margin for heading */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upper Part - Home -->
+    <div class="upper-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Hi, I'm Joseph Vincent Quilay</h1>
+                    <p>A junior web developer</p>
+                    <!-- Icons for Facebook, GitHub, and Gmail -->
+                    <div>
+                        <a href="facebook_link" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="github_link" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:your_email@example.com" class="social-icon"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <!-- Button for downloading the resume -->
+                    <a href="path_to_your_resume" download class="btn btn-primary mt-3">Download Resume</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/400" alt="Profile Image" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente quaerat veritatis, harum vel quisquam corporis perferendis unde perspiciatis esse autem fugiat magni molestias dolore illo illum ullam aperiam ipsam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur possimus cumque fuga fugiat sunt voluptate? Quod reiciendis laboriosam est consequatur enim, illo accusantium esse fugiat asperiores maxime quia amet.
+            </p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Project description goes here...</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Project description goes here...</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Project description goes here...</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts Section -->
+    <div id="contacts" class="contacts">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="form-holder">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
